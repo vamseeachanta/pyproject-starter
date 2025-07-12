@@ -1,6 +1,6 @@
-# CLAUDE.md
+# Guidance.md
 
-This file provides comprehensive guidance to Claude Code when working with Astro 5+ applications and the Islands Architecture.
+This file provides comprehensive guidance to AI Assistant when working with Astro 5+ applications and the Islands Architecture.
 
 ## Core Development Philosophy
 
@@ -24,22 +24,12 @@ Avoid building functionality on speculation. Implement features only when they a
 
 ### Context Awareness
 
-- When implementing features, always check existing patterns first
-- Prefer static generation over client-side rendering when possible
-- Use framework-specific components only when interactivity is required
-- Check for similar functionality across different framework integrations
-- Understand when to use `.astro` vs framework components
 
-### Common Pitfalls to Avoid
-
-- Over-hydrating components that could be static
+# AI Assistant ASTRO Guidance
+Use your AI assistant for code generation, review, and automation in Astro projects.
+## AI Assistant Workflow
 - Mixing multiple frameworks unnecessarily in single components
 - Ignoring Astro's partial hydration benefits
-- Creating duplicate functionality across different framework islands
-- Overwriting existing integrations without checking alternatives
-
-### Workflow Patterns
-
 - Preferably create tests BEFORE implementation (TDD)
 - Use "think hard" for hydration strategy decisions
 - Break complex interactive components into smaller, focused islands

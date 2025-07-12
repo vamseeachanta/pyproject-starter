@@ -1,6 +1,6 @@
-# CLAUDE.md
+# Python-Basic.md
 
-This file provides comprehensive guidance to Claude Code when working with Python code in this repository.
+This file provides comprehensive guidance to AI Assistant when working with Python code in this repository.
 
 ## Core Development Philosophy
 
@@ -417,7 +417,7 @@ class Product(ProductBase):
 
 ### Commit Message Format
 
-Never include claude code, or written by claude code in commit messages
+Never include AI Assistant, or written by AI Assistant in commit messages
 
 ```
 <type>(<scope>): <subject>

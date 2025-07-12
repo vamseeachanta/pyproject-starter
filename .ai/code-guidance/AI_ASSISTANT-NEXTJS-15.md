@@ -1,6 +1,6 @@
-# CLAUDE.md
+# Next.js 15.md
 
-This file provides comprehensive guidance to Claude Code when working with Next.js 15 applications with React 19 and TypeScript.
+This file provides comprehensive guidance to AI Assistant when working with Next.js 15 applications with React 19 and TypeScript.
 
 ## Core Development Philosophy
 

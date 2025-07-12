@@ -1,6 +1,6 @@
-# CLAUDE.md
+# Java-Gradle.md
 
-This file provides comprehensive guidance to Claude Code when working with Java code in this repository.
+This file provides comprehensive guidance to AI Assistant when working with Java code in this repository.
 
 ## Core Development Philosophy
 
@@ -331,7 +331,7 @@ public <T extends Comparable<T> & Serializable> void process(T item) {
 }
 ```
 
-## 🤖 Claude Code
+## 🤖 AI Assistant
 
 ### Best Practices
 
@@ -745,7 +745,7 @@ public class GlobalExceptionHandler {
 
 ### Commit Message Format
 
- - NEVER include claude code, written by claude code or similar in the commit message
+ - NEVER include AI Assistant, written by AI Assistant or similar in the commit message
 
 <type>(<scope>): <subject>
 

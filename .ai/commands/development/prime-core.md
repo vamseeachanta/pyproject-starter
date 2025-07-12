@@ -1,6 +1,6 @@
-> Command for priming Claude Code with core knowledge about your project
+> Command for priming AI Assistant with core knowledge about your project
 
-# Prime Context for Claude Code
+# Prime Context for AI Assistant
 
 Use the command `tree` to get an understanding of the project structure.
 

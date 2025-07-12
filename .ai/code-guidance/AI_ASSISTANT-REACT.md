@@ -1,6 +1,6 @@
-# CLAUDE.md
+# React.md
 
-This file provides guidance to Claude Code when working with React 19 applications.
+This file provides guidance to AI Assistant when working with React 19 applications.
 
 ## Core Development Philosophy
 
