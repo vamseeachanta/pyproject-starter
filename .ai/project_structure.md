@@ -2,6 +2,8 @@
 
 ## Directory Structure
 
+Follow strict vertical slice architecture with tests
+
 ```
 project/
 ├── .ai/                            # AI assistant configuration

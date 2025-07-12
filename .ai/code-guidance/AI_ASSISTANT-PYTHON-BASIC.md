@@ -27,55 +27,11 @@ Avoid building functionality on speculation. Implement features only when they a
 - **Functions should be under 50 lines** with a single, clear responsibility.
 - **Classes should be under 100 lines** and represent a single concept or entity.
 - **Organize code into clearly separated modules**, grouped by feature or responsibility.
-- **Line lenght should be max 100 characters** ruff rule in pyproject.toml
+- **Line length should be max 88 characters** ruff rule in pyproject.toml
 
-### Project Architecture
+### Project Structure
 
-Follow strict vertical slice architecture with tests living next to the code they test:
-
-```
-src/project/
-    __init__.py
-    main.py
-    tests/
-        test_main.py
-    conftest.py
-
-    # Core modules
-    database/
-        __init__.py
-        connection.py
-        models.py
-        tests/
-            test_connection.py
-            test_models.py
-
-    auth/
-        __init__.py
-        authentication.py
-        authorization.py
-        tests/
-            test_authentication.py
-            test_authorization.py
-
-    # Feature slices
-    features/
-        user_management/
-            __init__.py
-            handlers.py
-            validators.py
-            tests/
-                test_handlers.py
-                test_validators.py
-
-        payment_processing/
-            __init__.py
-            processor.py
-            gateway.py
-            tests/
-                test_processor.py
-                test_gateway.py
-```
+.ai\project_structure.md
 
 ## 🛠️ Development Environment
 
