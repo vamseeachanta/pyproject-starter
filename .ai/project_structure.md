@@ -2,7 +2,7 @@
 
 ## Directory Structure
 
-Follow strict vertical slice architecture with tests
+Follow strict vertical slice architecture
 
 ```
 project/
