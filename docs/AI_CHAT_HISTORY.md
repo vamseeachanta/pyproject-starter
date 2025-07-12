@@ -3,11 +3,11 @@
 ## Initial Request
 
 **Date:** July 4, 2025  
-**Request:** Rename py_package to py-package-template in all repo files
+**Request:** Rename py_package to pyproject-starter in all repo files
 
 ## Context
 
-Working with a Python package template repository that needed to be renamed from the generic `py_package` to `py-package-template` for better identification and clarity.
+Working with a Python package template repository that needed to be renamed from the generic `py_package` to `pyproject-starter` for better identification and clarity.
 
 ## Actions Taken
 
@@ -28,7 +28,7 @@ Working with a Python package template repository that needed to be renamed from
 ### 3. Configuration Updates
 
 - Updated `pyproject.toml`:
-  - Package name: `py_package` → `py-package-template` (with hyphens for PyPI)
+  - Package name: `py_package` → `pyproject-starter` (with hyphens for PyPI)
   - Module references: `py_package` → `py_package_template` (underscores for imports)
   - GitHub URLs updated to reflect new repository name
   - File paths in version management configuration
@@ -71,7 +71,7 @@ Working with a Python package template repository that needed to be renamed from
 ## Key Design Decisions
 
 1. **Naming Convention:**
-   - Package name: `py-package-template` (hyphens for PyPI distribution)
+   - Package name: `pyproject-starter` (hyphens for PyPI distribution)
    - Module name: `py_package_template` (underscores for Python compatibility)
 
 2. **Documentation Strategy:**

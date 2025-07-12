@@ -1,4 +1,4 @@
-"""Pytest configuration and shared fixtures for py-package-template tests
+"""Pytest configuration and shared fixtures for pyproject-starter tests
 
 This module provides shared test fixtures, configuration, and utilities
 that can be used across all test modules.

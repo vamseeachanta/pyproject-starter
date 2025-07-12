@@ -8,7 +8,7 @@ This folder contains Visual Studio Code workspace configuration files that were 
 
 ### Session Date: July 4, 2025
 
-**Primary Request:** Rename py_package to py-package-template in all repo files
+**Primary Request:** Rename py_package to pyproject-starter in all repo files
 
 ## VS Code Related Changes
 

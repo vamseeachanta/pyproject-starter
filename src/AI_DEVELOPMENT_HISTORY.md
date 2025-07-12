@@ -8,7 +8,7 @@ This folder contains the main Python package source code that was renamed and re
 
 ### Initial Request (July 4, 2025)
 
-**Request:** Rename py_package to py-package-template in all repo files
+**Request:** Rename py_package to pyproject-starter in all repo files
 
 ## Changes Made to src/
 
@@ -77,7 +77,7 @@ src/
 ### For Ongoing Development
 - When adding new modules, use the `py_package_template` namespace
 - Import statements should reference `py_package_template`
-- External documentation should reference the package as `py-package-template`
+- External documentation should reference the package as `pyproject-starter`
 
 ### For Testing
 - Test imports should use `py_package_template`

@@ -1,6 +1,6 @@
 # Git Bash Integration with VS Code
 
-This document explains how to use Git Bash with VS Code in the py-package-template project.
+This document explains how to use Git Bash with VS Code in the pyproject-starter project.
 
 ## What Was Configured
 
@@ -108,7 +108,7 @@ cd src/
 pwd
 
 # Go to project root
-cd /k/github/py-package-template
+cd /k/github/pyproject-starter
 ```
 
 ### File Operations

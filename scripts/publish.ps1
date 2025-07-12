@@ -1,4 +1,4 @@
-# PyPI Deployment Script for py-package-template (PowerShell)
+# PyPI Deployment Script for pyproject-starter (PowerShell)
 # This script handles building and publishing the package to PyPI
 
 param(
@@ -21,7 +21,7 @@ $ErrorActionPreference = "Stop"
 $TEST_PYPI_URL = "https://test.pypi.org/legacy/"
 $PROD_PYPI_URL = "https://upload.pypi.org/legacy/"
 
-Write-Host "🚀 PyPI Publishing Script for py-package-template" -ForegroundColor Blue
+Write-Host "🚀 PyPI Publishing Script for pyproject-starter" -ForegroundColor Blue
 Write-Host "================================================" -ForegroundColor Blue
 Write-Host ""
 
@@ -198,10 +198,10 @@ function Main {
         Publish-Package -RepositoryUrl $TEST_PYPI_URL -TokenVarName "TEST_PYPI_API_TOKEN" -RepoName "Test PyPI"
         Write-Host ""
         Write-Host "🎉 Package published to Test PyPI!" -ForegroundColor Green
-        Write-Host "View at: https://test.pypi.org/project/py-package-template/"
+        Write-Host "View at: https://test.pypi.org/project/pyproject-starter/"
         Write-Host ""
         Write-Host "To install from Test PyPI:"
-        Write-Host "pip install --index-url https://test.pypi.org/simple/ py-package-template"
+        Write-Host "pip install --index-url https://test.pypi.org/simple/ pyproject-starter"
     }
     else {
         # Confirm production publish
@@ -216,10 +216,10 @@ function Main {
         Publish-Package -RepositoryUrl $PROD_PYPI_URL -TokenVarName "PYPI_API_TOKEN" -RepoName "Production PyPI"
         Write-Host ""
         Write-Host "🎉 Package published to Production PyPI!" -ForegroundColor Green
-        Write-Host "View at: https://pypi.org/project/py-package-template/"
+        Write-Host "View at: https://pypi.org/project/pyproject-starter/"
         Write-Host ""
         Write-Host "To install:"
-        Write-Host "pip install py-package-template"
+        Write-Host "pip install pyproject-starter"
     }
 }
 

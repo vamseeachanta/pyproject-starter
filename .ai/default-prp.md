@@ -129,7 +129,7 @@ These rules ensure maintainability, safety, and developer velocity.
       calculation.py
       tests/                  # Unit tests for main package
         test_calculation.py
-    py-package-template/      # Alternative naming for distribution
+    pyproject-starter/      # Alternative naming for distribution
       __init__.py
       __main__.py
       tests/

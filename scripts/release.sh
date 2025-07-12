@@ -283,10 +283,10 @@ main() {
         if [ "$NO_PUBLISH" = false ]; then
             if [ "$PUBLISH_TARGET" = "test" ]; then
                 echo "Published to: Test PyPI"
-                echo "View at: https://test.pypi.org/project/py-package-template/"
+                echo "View at: https://test.pypi.org/project/pyproject-starter/"
             else
                 echo "Published to: Production PyPI"
-                echo "View at: https://pypi.org/project/py-package-template/"
+                echo "View at: https://pypi.org/project/pyproject-starter/"
             fi
         fi
     fi

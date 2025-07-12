@@ -7,7 +7,7 @@ param(
     [string]$Command = "setup"
 )
 
-Write-Host "🚀 py-package-template uv Migration Script" -ForegroundColor Green
+Write-Host "🚀 pyproject-starter uv Migration Script" -ForegroundColor Green
 Write-Host "==========================================" -ForegroundColor Green
 
 # Function to check if command exists

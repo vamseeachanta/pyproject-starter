@@ -4,7 +4,7 @@
 
 set -e
 
-echo "🚀 py-package-template uv Migration Script"
+echo "🚀 pyproject-starter uv Migration Script"
 echo "=========================================="
 
 # Function to check if command exists

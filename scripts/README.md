@@ -1,6 +1,6 @@
 # PyPI Deployment Scripts - Quick Reference
 
-This directory contains scripts for deploying the py-package-template to PyPI.
+This directory contains scripts for deploying the pyproject-starter to PyPI.
 
 ## Available Scripts
 

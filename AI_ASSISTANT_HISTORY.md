@@ -10,7 +10,7 @@
 
 ### 1. Initial Request: Package Renaming
 
-**User Request:** "rename py_package to py-package-template in all repo files"
+**User Request:** "rename py_package to pyproject-starter in all repo files"
 
 **AI Response Summary:**
 - Conducted comprehensive repository analysis
@@ -79,7 +79,7 @@
 ## Repository Structure After Changes
 
 ```
-py-package-template/
+pyproject-starter/
 ├── .git/
 ├── .gitignore
 ├── .vscode/
@@ -117,7 +117,7 @@ py-package-template/
 ### 1. Naming Convention Resolution
 - **Challenge**: Python modules cannot contain hyphens in import statements
 - **Solution**: 
-  - Package name: `py-package-template` (PyPI distribution)
+  - Package name: `pyproject-starter` (PyPI distribution)
   - Module name: `py_package_template` (Python imports)
 
 ### 2. Documentation Strategy

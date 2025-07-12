@@ -1,4 +1,4 @@
-# Automated Release Script for py-package-template (PowerShell)
+# Automated Release Script for pyproject-starter (PowerShell)
 # This script handles version bumping, git tagging, and publishing to PyPI
 
 param(
@@ -24,7 +24,7 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-Write-Host "🚀 Automated Release Script for py-package-template" -ForegroundColor Blue
+Write-Host "🚀 Automated Release Script for pyproject-starter" -ForegroundColor Blue
 Write-Host "================================================" -ForegroundColor Blue
 Write-Host ""
 
@@ -328,11 +328,11 @@ function Main {
         if (-not $NoPublish) {
             if ($PublishTarget -eq "test") {
                 Write-Host "Published to: Test PyPI"
-                Write-Host "View at: https://test.pypi.org/project/py-package-template/"
+                Write-Host "View at: https://test.pypi.org/project/pyproject-starter/"
             }
             else {
                 Write-Host "Published to: Production PyPI"
-                Write-Host "View at: https://pypi.org/project/py-package-template/"
+                Write-Host "View at: https://pypi.org/project/pyproject-starter/"
             }
         }
     }

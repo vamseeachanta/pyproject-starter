@@ -179,10 +179,10 @@ main() {
         publish_package "$TEST_PYPI_URL" "TEST_PYPI_API_TOKEN" "Test PyPI"
         echo ""
         echo -e "${GREEN}🎉 Package published to Test PyPI!${NC}"
-        echo "View at: https://test.pypi.org/project/py-package-template/"
+        echo "View at: https://test.pypi.org/project/pyproject-starter/"
         echo ""
         echo "To install from Test PyPI:"
-        echo "pip install --index-url https://test.pypi.org/simple/ py-package-template"
+        echo "pip install --index-url https://test.pypi.org/simple/ pyproject-starter"
     else
         # Confirm production publish
         echo -e "${YELLOW}⚠️  You are about to publish to Production PyPI!${NC}"
@@ -196,10 +196,10 @@ main() {
         publish_package "$PROD_PYPI_URL" "PYPI_API_TOKEN" "Production PyPI"
         echo ""
         echo -e "${GREEN}🎉 Package published to Production PyPI!${NC}"
-        echo "View at: https://pypi.org/project/py-package-template/"
+        echo "View at: https://pypi.org/project/pyproject-starter/"
         echo ""
         echo "To install:"
-        echo "pip install py-package-template"
+        echo "pip install pyproject-starter"
     fi
 }
 

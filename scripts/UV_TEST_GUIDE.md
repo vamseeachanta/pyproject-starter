@@ -192,4 +192,4 @@ The scripts work well with VS Code and other IDEs:
 - [uv documentation](https://docs.astral.sh/uv/)
 - [pytest documentation](https://docs.pytest.org/)
 - [pytest-cov documentation](https://pytest-cov.readthedocs.io/)
-- [Project repository](https://github.com/vamseeachanta/py-package-template)
+- [Project repository](https://github.com/vamseeachanta/pyproject-starter)

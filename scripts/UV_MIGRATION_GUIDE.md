@@ -205,4 +205,4 @@ uv sync --frozen
 2. **View command help**: `uv add --help`
 3. **Check project status**: `uv check`
 4. **Show dependency tree**: `uv tree`
-5. **Open GitHub issue**: [py-package-template issues](https://github.com/vamseeachanta/py-package-template/issues)
+5. **Open GitHub issue**: [pyproject-starter issues](https://github.com/vamseeachanta/pyproject-starter/issues)
