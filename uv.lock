@@ -1378,7 +1378,7 @@ wheels = [
 ]
 
 [[package]]
-name = "py-package-template"
+name = "pyproject_starter"
 version = "0.0.1"
 source = { editable = "." }
 dependencies = [

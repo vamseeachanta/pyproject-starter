@@ -2,7 +2,7 @@ import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src")))
 
-"""Tests for py_package_template.__main__ module
+"""Tests for pyproject_starter.__main__ module
 
 This module tests the main entry point functionality including:
 - Module docstring and version information
@@ -13,8 +13,8 @@ This module tests the main entry point functionality including:
 import pytest
 from unittest.mock import patch
 
-import py_package_template
-from py_package_template import __main__ as main_module
+import pyproject_starter
+from pyproject_starter import __main__ as main_module
 
 
 class TestMainModule:
@@ -37,14 +37,14 @@ class TestMainModule:
     def test_main_module_contains_version_info(self):
         """Test that the main module docstring contains version information."""
         docstring = main_module.__doc__
-        assert "py-package-template v0.0.1" in docstring, (
+        assert "pyproject_starter v0.0.1" in docstring, (
             "Docstring should contain version info"
         )
 
     def test_main_module_contains_github_url(self):
         """Test that the main module contains GitHub repository URL."""
         docstring = main_module.__doc__
-        expected_url = "https://github.com/vamseeachanta/py-package-template"
+        expected_url = "https://github.com/vamseeachanta/pyproject_starter"
         assert expected_url in docstring, (
             "Docstring should contain GitHub repository URL"
         )
@@ -52,7 +52,7 @@ class TestMainModule:
     def test_main_module_contains_pypi_url(self):
         """Test that the main module contains PyPI project URL."""
         docstring = main_module.__doc__
-        expected_url = "https://pypi.org/project/py-package-template/"
+        expected_url = "https://pypi.org/project/pyproject_starter/"
         assert expected_url in docstring, (
             "Docstring should contain PyPI project URL"
         )
@@ -64,7 +64,7 @@ class TestMainModuleStructure:
     def test_main_module_is_importable(self):
         """Test that the main module can be imported."""
         try:
-            from py_package_template import __main__
+            from pyproject_starter import __main__
             assert __main__ is not None
         except ImportError as e:
             pytest.fail(f"Failed to import __main__ module: {e}")
@@ -146,8 +146,8 @@ class TestMainModuleDocumentation:
         docstring = main_module.__doc__
         
         # Check URL formatting with bullet points
-        github_url = "- https://github.com/vamseeachanta/py-package-template"
-        pypi_url = "- https://pypi.org/project/py-package-template/"
+        github_url = "- https://github.com/vamseeachanta/pyproject_starter"
+        pypi_url = "- https://pypi.org/project/pyproject_starter/"
         
         assert github_url in docstring, "GitHub URL should be bullet-pointed"
         assert pypi_url in docstring, "PyPI URL should be bullet-pointed"
@@ -159,17 +159,17 @@ class TestMainModuleIntegration:
     def test_main_module_package_integration(self):
         """Test that main module integrates properly with package."""
         # Test that main module is part of the package
-        assert hasattr(py_package_template, '__main__'), (
+        assert hasattr(pyproject_starter, '__main__'), (
             "Package should have __main__ module"
         )
 
     def test_main_module_version_consistency(self):
         """Test that version in main module matches package version."""
         main_docstring = main_module.__doc__
-        package_version = py_package_template.__version__
+        package_version = pyproject_starter.__version__
         
         # Version should appear in main module docstring
-        version_string = f"py-package-template v{package_version}"
+        version_string = f"pyproject_starter v{package_version}"
         assert version_string in main_docstring, (
             f"Main module should contain version string: {version_string}"
         )
@@ -177,7 +177,7 @@ class TestMainModuleIntegration:
     def test_package_can_be_executed_as_module(self):
         """Test that package structure supports -m execution."""
         # This tests that the structure is correct for python -m execution
-        assert hasattr(py_package_template, '__main__'), (
+        assert hasattr(pyproject_starter, '__main__'), (
             "Package should have __main__ for -m execution"
         )
 
@@ -237,8 +237,8 @@ class TestMainModuleQuality:
 
 # Validation tests
 @pytest.mark.parametrize("url", [
-    "https://github.com/vamseeachanta/py-package-template",
-    "https://pypi.org/project/py-package-template/",
+    "https://github.com/vamseeachanta/pyproject_starter",
+    "https://pypi.org/project/pyproject_starter/",
 ])
 def test_main_module_contains_url(url):
     """Test that main module contains expected URLs."""
