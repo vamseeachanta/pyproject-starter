@@ -41,7 +41,7 @@ powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```bash
 # 1. Clone repository
 git clone <repo-url>
-cd py-package-template
+cd pyproject_starter
 
 # 2. Install uv (if not already installed)
 curl -LsSf https://astral.sh/uv/install.sh | sh

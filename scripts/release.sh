@@ -1,5 +1,5 @@
 #!/bin/bash
-# Automated Release Script for py-package-template
+# Automated Release Script for pyproject_starter
 # This script handles version bumping, git tagging, and publishing to PyPI
 
 set -e  # Exit on any error
@@ -11,7 +11,7 @@ YELLOW='\033[0;33m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
-echo -e "${BLUE}🚀 Automated Release Script for py-package-template${NC}"
+echo -e "${BLUE}🚀 Automated Release Script for pyproject_starter${NC}"
 echo -e "${BLUE}================================================${NC}"
 echo ""
 

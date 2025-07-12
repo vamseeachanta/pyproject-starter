@@ -1,5 +1,5 @@
 #!/bin/bash
-# PyPI Deployment Script for py-package-template
+# PyPI Deployment Script for pyproject_starter
 # This script handles building and publishing the package to PyPI
 
 set -e  # Exit on any error
@@ -15,7 +15,7 @@ NC='\033[0m' # No Color
 TEST_PYPI_URL="https://test.pypi.org/legacy/"
 PROD_PYPI_URL="https://upload.pypi.org/legacy/"
 
-echo -e "${BLUE}🚀 PyPI Publishing Script for py-package-template${NC}"
+echo -e "${BLUE}🚀 PyPI Publishing Script for pyproject_starter${NC}"
 echo -e "${BLUE}================================================${NC}"
 echo ""
 

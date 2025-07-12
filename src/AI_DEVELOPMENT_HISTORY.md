@@ -29,7 +29,7 @@ src/
 **After:**
 ```
 src/
-  py_package_template/
+  pyproject_starter/
     __init__.py
     __main__.py
     calculation.py
@@ -41,7 +41,7 @@ src/
 ### 2. File Updates
 
 #### `__init__.py`
-- Updated GitHub repository URL from `py_package` to `py-package-template`
+- Updated GitHub repository URL from `py_package` to `pyproject_starter`
 - Maintained version string format
 
 #### `__main__.py`
@@ -51,13 +51,13 @@ src/
 
 #### `tests/test_calculation.py`
 - Updated import statements:
-  - `import py_package` → `import py_package_template`
-  - `from py_package import calculation` → `from py_package_template import calculation`
+  - `import py_package` → `import pyproject_starter`
+  - `from py_package import calculation` → `from pyproject_starter import calculation`
 
 ### 3. Design Decisions
 
 #### Module Naming Strategy
-- **Package name**: `py-package-template` (for PyPI distribution, allows hyphens)
+- **Package name**: `pyproject_starter` (for PyPI distribution and Python imports)
 - **Module name**: `py_package_template` (for Python imports, requires underscores)
 - This approach resolves the Python import system limitation with hyphens while maintaining a descriptive package name
 

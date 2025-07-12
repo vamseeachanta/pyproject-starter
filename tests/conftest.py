@@ -88,13 +88,13 @@ def sample_test_data():
 def package_info():
     """Fixture providing package information for tests."""
     return {
-        'name': 'py-package-template',
+        'name': 'pyproject_starter',
         'version': '0.0.1',
-        'python_name': 'py_package_template',
+        'python_name': 'pyproject_starter',
         'author': 'Vamsee Achanta',
         'email': 'vamsee.achanta@aceengineer.com',
-        'github_url': 'https://github.com/vamseeachanta/py-package-template',
-        'pypi_url': 'https://pypi.org/project/py-package-template/'
+        'github_url': 'https://github.com/vamseeachanta/pyproject_starter',
+        'pypi_url': 'https://pypi.org/project/pyproject_starter/'
     }
 
 

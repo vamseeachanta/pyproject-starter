@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# uv-test.sh - Test runner script using uv for py-package-template
+# uv-test.sh - Test runner script using uv for pyproject_starter
 # This script provides various testing options using uv package manager
 
 set -e  # Exit on error
@@ -15,7 +15,7 @@ NC='\033[0m' # No Color
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 
-echo -e "${BLUE}=== py-package-template Test Runner (uv) ===${NC}"
+echo -e "${BLUE}=== pyproject_starter Test Runner (uv) ===${NC}"
 echo "Project root: $PROJECT_ROOT"
 echo "Date: $(date)"
 echo ""

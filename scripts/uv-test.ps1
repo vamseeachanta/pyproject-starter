@@ -1,4 +1,4 @@
-# uv-test.ps1 - Test runner script using uv for py-package-template
+# uv-test.ps1 - Test runner script using uv for pyproject_starter
 # This script provides various testing options using uv package manager
 
 param(
@@ -19,7 +19,7 @@ $Colors = @{
 $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $ProjectRoot = Split-Path -Parent $ScriptDir
 
-Write-Host "=== py-package-template Test Runner (uv) ===" -ForegroundColor $Colors.Blue
+Write-Host "=== pyproject_starter Test Runner (uv) ===" -ForegroundColor $Colors.Blue
 Write-Host "Project root: $ProjectRoot"
 Write-Host "Date: $(Get-Date)"
 Write-Host ""

@@ -1,6 +1,6 @@
 # UV Test Scripts Quick Reference
 
-This document provides a quick reference for using the uv test scripts in the py-package-template repository.
+This document provides a quick reference for using the uv test scripts in the pyproject_starter repository.
 
 ## Files
 

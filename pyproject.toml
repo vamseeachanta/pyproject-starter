@@ -1,9 +1,11 @@
+[tool.hatch.build.targets.wheel]
+packages = ["src/pyproject_starter"]
 [build-system]
 requires = ["hatchling>=1.13.0"]
 build-backend = "hatchling.build"
 
 [project]
-name = "py-package-template"
+name = "pyproject_starter"
 version = "0.0.2"
 description = "Python Package Cookiecutter Code"
 readme = "README.md"
@@ -45,13 +47,13 @@ docs = [
 ]
 
 [project.scripts]
-py-package-template = "py_package_template.__main__:main"
+pyproject_starter = "pyproject_starter.__main__:main"
 
 [project.urls]
-repository = "https://github.com/vamseeachanta/py-package-template"
-documentation = "https://github.com/vamseeachanta/py-package-template/blob/main/README.md"
-changelog = "https://github.com/vamseeachanta/py-package-template/blob/main/CHANGELOG.md"
-issues = "https://github.com/vamseeachanta/py-package-template/issues"
+repository = "https://github.com/vamseeachanta/pyproject_starter"
+documentation = "https://github.com/vamseeachanta/pyproject_starter/blob/main/README.md"
+changelog = "https://github.com/vamseeachanta/pyproject_starter/blob/main/CHANGELOG.md"
+issues = "https://github.com/vamseeachanta/pyproject_starter/issues"
 
 # uv-specific configuration
 [tool.uv]
@@ -79,8 +81,8 @@ push            = false
         'current_version = "{version}"',
         'version = "{version}"',
     ]
-    "src/py_package_template/__init__.py" = ["{version}"]
-    "src/py_package_template/__main__.py" = ["- leveraged-multi-family-analysis v{version}"]
+    "src/pyproject_starter/__init__.py" = ["{version}"]
+    "src/pyproject_starter/__main__.py" = ["- leveraged-multi-family-analysis v{version}"]
 
 [tool.isort]
 profile                   = "black"
