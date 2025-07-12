@@ -1,9 +1,7 @@
 
-import sys
-import os
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src")))
 
-"""Tests for py_package_template.calculation module
+
+"""Tests for pyproject_starter.calculation module
 
 This module tests the calculation functionality including:
 - pressure_pipe function
@@ -16,7 +14,12 @@ from unittest.mock import patch
 from io import StringIO
 import sys
 
-from py_package_template import calculation
+try:
+    from pyproject_starter import calculation
+except ImportError:
+    import sys, os
+    sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src")))
+    from pyproject_starter import calculation
 
 
 class TestPressurePipe:
@@ -97,7 +100,7 @@ class TestCalculationIntegration:
 
     def test_import_and_call(self):
         """Test importing and calling the function in one flow."""
-        from py_package_template.calculation import pressure_pipe
+        from pyproject_starter.calculation import pressure_pipe
         result = pressure_pipe()
         assert result == 10
 

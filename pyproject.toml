@@ -89,7 +89,10 @@ import_heading_thirdparty = "Third party imports"
 import_heading_firstparty = "Reader imports"
 
 [tool.mypy]
+python_version = "3.8"
 strict = true
+warn_return_any = true
+warn_unused_configs = true
 
     [[tool.mypy.overrides]]
     module                 = "feedparser"
@@ -155,3 +158,11 @@ directory = "htmlcov"
 
 [tool.coverage.xml]
 output = "coverage.xml"
+
+[tool.ruff]
+line-length = 88
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+

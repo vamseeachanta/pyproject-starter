@@ -1,4 +1,4 @@
-import py_package_template
-from py_package_template import calculation
+import pyproject_starter
+from pyproject_starter import calculation
 
 calculation.pressure_pipe()

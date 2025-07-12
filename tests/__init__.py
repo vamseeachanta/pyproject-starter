@@ -1,6 +1,6 @@
-"""Test suite for py-package-template
+"""Test suite for pyproject_starter
 
-This module contains all tests for the py-package-template package.
+This module contains all tests for the pyproject_starter package.
 Tests are organized by functionality and follow pytest conventions.
 """
 

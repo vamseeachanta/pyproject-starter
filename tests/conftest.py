@@ -129,5 +129,6 @@ def pytest_collection_modifyitems(config, items):
             item.add_marker(pytest.mark.integration)
         
         # Mark unit tests (default for most tests)
-        if not any(marker.name in ['integration', 'performance'] for marker in item.iter_markers()):
+        markers = getattr(item, 'iter_markers', lambda: [])()
+        if not any(getattr(marker, 'name', None) in ['integration', 'performance'] for marker in markers):
             item.add_marker(pytest.mark.unit)
