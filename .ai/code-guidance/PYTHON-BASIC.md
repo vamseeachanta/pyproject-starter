@@ -246,6 +246,9 @@ def database_transaction():
         conn.close()
 ```
 
+
+
+
 ### Logging Strategy
 
 ```python
@@ -273,6 +276,37 @@ def log_execution(func):
             logger.exception(f"Error in {func.__name__}: {e}")
             raise
     return wrapper
+```
+
+### Logging Strategy (Loguru)
+
+```python
+from loguru import logger
+from functools import wraps
+
+# Configure loguru structured logging
+logger.add(
+    "logs/app.log",
+    rotation="1 MB",
+    retention="10 days",
+    level="INFO",
+    format="<green>{time:YYYY-MM-DD HH:mm:ss}</green> | <level>{level: <8}</level> | <cyan>{name}</cyan>:<cyan>{function}</cyan> | <level>{message}</level>"
+)
+
+# Log function entry/exit for debugging
+def log_execution(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        logger.debug(f"Entering {func.__name__}")
+        try:
+            result = func(*args, **kwargs)
+            logger.debug(f"Exiting {func.__name__} successfully")
+            return result
+        except Exception as e:
+            logger.exception(f"Error in {func.__name__}: {e}")
+            raise
+    return wrapper
+```
 ```
 
 ## 🔧 Configuration Management
