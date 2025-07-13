@@ -18,3 +18,27 @@ Explain back to me:
 - Key files and their purposes
 - Any important dependencies
 - Any important configuration files
+
+
+---
+
+AI Assistant Automation Tips:
+
+- Auto-summarize README, CLAUDE.md, and src/
+- Extract project goals, dependencies, and config
+- Output summary in this format:
+
+**Project Structure:**
+...summary...
+
+**Purpose & Goals:**
+...summary...
+
+**Key Files:**
+...summary...
+
+**Dependencies:**
+...summary...
+
+**Config Files:**
+...summary...

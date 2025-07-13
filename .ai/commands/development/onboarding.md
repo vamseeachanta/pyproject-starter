@@ -38,6 +38,33 @@ Document the development process:
 - Git branch naming conventions
 - How to create a new feature
 - Testing requirements
+
+
+---
+
+Onboarding Checklist for AI Assistant:
+
+- [ ] Environment setup verified
+- [ ] First commit made
+- [ ] Tests run and pass
+- [ ] Developer has access to all key docs
+
+Environment Setup Verification:
+
+- Run dependency install
+- Run tests
+- Confirm no errors
+
+Feedback Template:
+
+**Questions:**
+- ...
+
+**Setup Issues:**
+- ...
+
+**Suggestions:**
+- ...
 - Code style/linting rules
 - PR process and review guidelines
 - CI/CD pipeline overview

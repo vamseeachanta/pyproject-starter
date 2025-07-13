@@ -2,6 +2,29 @@
 
 Implement a specification using an existing SPEC PRP.
 
+---
+
+Execution Checklist:
+
+- [ ] Understand spec and context
+- [ ] ULTRATHINK and break down tasks
+- [ ] Execute tasks and validate
+- [ ] Verify transformation and report status
+
+AI Assistant Prompts:
+
+- Summarize spec requirements before starting
+- Document blockers and validation results
+- Report transformation status
+
+Execution Summary Template:
+
+**Spec:** ...
+**Tasks Executed:** ...
+**Issues Found:** ...
+**Validation Results:** ...
+**Transformation Status:** ...
+
 ## PRP File: $ARGUMENTS
 
 ## Execution Process

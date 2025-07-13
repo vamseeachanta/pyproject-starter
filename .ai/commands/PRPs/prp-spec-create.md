@@ -2,6 +2,29 @@
 
 Generate a comprehensive specification-driven PRP with clear transformation goals.
 
+---
+
+Planning Checklist:
+
+- [ ] Assess current state and pain points
+- [ ] Research desired state and best practices
+- [ ] Clarify user requirements and objectives
+- [ ] Generate spec and validation steps
+
+AI Assistant Prompts:
+
+- Summarize current and desired state
+- Document research findings and blockers
+- Track validation and transformation progress
+
+Spec Summary Template:
+
+**Current State:** ...
+**Desired State:** ...
+**Blockers:** ...
+**Validation Steps:** ...
+**Transformation Progress:** ...
+
 ## Specification: $ARGUMENTS
 
 ## Analysis Process

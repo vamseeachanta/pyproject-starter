@@ -33,12 +33,41 @@ $ARGUMENTS
      - `test:` for tests
      - `refactor:` for refactoring
 
-4. **Push to Remote**
+## PR Review Checklist
+
+- [ ] All new code is tested
+- [ ] Documentation updated
+- [ ] Lint and type checks pass
+- [ ] Linked to relevant issues
+- [ ] No sensitive data or secrets
+
+## PR Description Template
+
+**Motivation:**
+Explain why this change is needed.
+
+**Changes:**
+Summarize what was changed.
+
+**Impact:**
+Describe any impact on users, APIs, or dependencies.
+
+---
+
+AI Assistant Automation Tips:
+
+- Detect missing tests or docs
+- Suggest improvements based on diff
+- Auto-format PR description using template
+
+1. **Push to Remote**
+
    ```bash
    git push -u origin HEAD
    ```
 
-5. **Create PR**
+2. **Create PR**
+
    ```bash
    gh pr create --title "$ARGUMENTS" --body "$(cat <<'EOF'
    ## Summary
@@ -74,12 +103,14 @@ $ARGUMENTS
    )"
    ```
 
-6. **Post-Creation**
+3. **Post-Creation**
+
    - Add labels if needed: `gh pr edit --add-label "feature,needs-review"`
    - Request reviewers if known
    - Link to related issues
 
 Remember to:
+
 - Keep PRs focused and small
 - Provide context for reviewers
 - Test thoroughly before creating PR

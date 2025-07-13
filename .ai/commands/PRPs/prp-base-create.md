@@ -2,6 +2,23 @@
 
 ## Feature: $ARGUMENTS
 
+---
+
+Research Checklist:
+- [ ] Codebase analysis
+- [ ] External research
+- [ ] User clarification
+
+AI Assistant Prompts:
+- Summarize research findings and link sources
+- Document assumptions and open questions
+
+Research Summary Template:
+**Feature:** ...
+**Codebase Findings:** ...
+**External Findings:** ...
+**Questions:** ...
+
 Generate a complete PRP for feature implementation with deep and thorough research. Ensure rich context is passed to the AI through the PRP to enable one pass implementation success through self-validation and iterative refinement.
 
 The AI agent only gets the context you are appending to the PRP and its own training data. Assume the AI agent has access to the codebase and the same knowledge cutoff as you, so its important that your research findings are included or referenced in the PRP. The Agent has Websearch capabilities, so pass urls to documentation and examples.

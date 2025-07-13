@@ -9,50 +9,76 @@ May or may not be added, ignore the previous review if not specified.
 
 ## Review Focus Areas
 
-1. **Code Quality**
-   - Type hints on all functions and classes
-   - Pydantic v2 models for data validation
-   - No print() statements (use logging)
-   - Proper error handling
-   - Following PEP 8
-   - Docstrings following google style python docstrings
 
-2. **Pydantic v2 Patterns**
-   - Using ConfigDict not class Config
-   - field_validator not @validator
-   - model_dump() not dict()
-   - Proper use of Annotated types
+### Code Quality Checklist
 
-3. **Security**
-   - Input validation on all endpoints
-   - No SQL injection vulnerabilities
-   - Passwords properly hashed
-   - No hardcoded secrets
+- Type hints on all functions and classes
+- Pydantic v2 models for data validation
+- No print() statements (use logging)
+- Proper error handling
+- Following PEP 8
+- Docstrings following Google style
 
-4. **Structure**
-   - Unit tests are co-located with the code they test in tests/ folders
-   - Each feature is self-contained with its own models, service, and tools
-   - Shared components are only things used by multiple features
-   - Future improvements (like multiple AI providers) would go in src/shared/ai_providers/ when implemented
-   - Integration tests remain at the root level in tests/integration/
 
-5. **Linting**
-   - ruff check --fix
-   - mypy
+### Pydantic v2 Patterns
 
-6. **Testing**
-   - New code has tests
-   - Edge cases covered
-   - Mocking external dependencies
+- Use `ConfigDict` not `class Config`
+- Use `field_validator` not `@validator`
+- Use `model_dump()` not `dict()`
+- Use `Annotated` types where appropriate
 
-7. **Performance**
-   - No N+1 queries
-   - Efficient algorithms
-   - Proper async usage
 
-8. **Documentation**
-   - Clear README with setup instructions
-   - CLAUDE.md is up to date with any new important utils, dependencies etc for future cluade code instances
+### Security
+
+- Input validation on all endpoints
+- No SQL injection vulnerabilities
+- Passwords properly hashed
+- No hardcoded secrets
+- Run `pip-audit` or `safety` for dependency checks
+
+
+### Structure
+
+- Unit tests co-located with code in `tests/`
+- Each feature self-contained (models, service, tools)
+- Shared components only for multi-feature use
+- Future improvements (e.g., multiple AI providers) in `src/shared/ai_providers/`
+- Integration tests in `tests/integration/`
+
+
+### Linting & Automation
+
+- Run `ruff check --fix` and `mypy`
+- Use pre-commit hooks for linting/formatting
+
+
+### Testing
+
+- New code has tests
+- Edge cases covered
+- Mock external dependencies
+- Run `pytest --cov` for coverage
+
+
+### Performance
+
+- No N+1 queries
+- Efficient algorithms
+
+
+### Reporting
+
+- Summarize findings in markdown
+- Link to relevant docs/standards
+- Prioritize issues (high/medium/low)
+- Proper async usage
+
+
+### Documentation
+
+1. Clear README with setup instructions
+2. CLAUDE.md is up to date with any new important utils, dependencies etc for future Claude code instances
+
 
 ## Review Output
 
@@ -82,4 +108,5 @@ Create a concise review report with:
 Current: X% | Required: 80%
 Missing tests: [list]
 Save report to PRPs/code_reviews/review[#].md (check existing files first)
+```
 

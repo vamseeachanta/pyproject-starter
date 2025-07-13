@@ -24,6 +24,11 @@ $ARGUMENTS
    # Search for related error messages
    ```
 
+
+   <!-- AI Assistant: Summarize error logs and highlight frequent patterns -->
+
+   <!-- AI Assistant: Suggest likely root causes based on log analysis -->
+
 3. **Isolate the Problem**
    - **Binary Search**: Comment out code sections to narrow down
    - **Git Bisect**: Find when the bug was introduced
@@ -32,11 +37,32 @@ $ARGUMENTS
 
 4. **Common Debugging Strategies**
 
-   ### For Runtime Errors
-   - Read the full stack trace
-   - Identify the exact line causing the error
-   - Check variable values at that point
-   - Verify assumptions about data types
+
+## For Runtime Errors
+
+- Read the full stack trace
+- Identify the exact line causing the error
+- Check variable values at that point
+- Verify assumptions about data types
+
+
+## Findings Template
+
+**Summary:**
+Briefly describe the issue and root cause.
+
+**Steps Taken:**
+List the debugging steps performed.
+
+**Resolution:**
+Describe the fix or next steps.
+
+---
+
+AI Assistant Automation Tips:
+
+- Auto-summarize logs and errors
+- Propose likely fixes based on patterns
 
    ### For Logic Errors
    - Add print/log statements to trace execution

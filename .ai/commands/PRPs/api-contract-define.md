@@ -2,6 +2,27 @@
 
 Feature: $ARGUMENTS
 
+---
+
+API Contract Checklist:
+- [ ] Define endpoints
+- [ ] Specify request/response DTOs
+- [ ] Document error handling
+- [ ] Ensure versioning and security
+
+AI Assistant Prompts:
+- Summarize contract requirements and context
+- Check for RESTful best practices and consistency
+- Document validation steps and open questions
+
+API Contract Summary Template:
+**Feature:** ...
+**Endpoints:** ...
+**DTOs:** ...
+**Error Handling:** ...
+**Versioning/Security:** ...
+**Validation Steps:** ...
+
 ## Task: Create detailed API contract specification for backend/frontend coordination
 
 1. **Define RESTful endpoints**:

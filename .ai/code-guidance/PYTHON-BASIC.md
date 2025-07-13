@@ -218,7 +218,25 @@ class InsufficientFundsError(PaymentError):
             f"Insufficient funds: required {required}, available {available}"
         )
 
-# Use specific exception handling
+
+
+```python
+# Use specific exception handling (standard logging)
+try:
+    process_payment(amount)
+except InsufficientFundsError as e:
+    logger.warning(f"Payment failed: {e}")
+    return PaymentResult(success=False, reason="insufficient_funds")
+
+except PaymentError as e:
+    logger.error(f"Payment error: {e}")
+    return PaymentResult(success=False, reason="payment_error")
+```
+
+```python
+# Use specific exception handling (Loguru)
+from loguru import logger
+
 try:
     process_payment(amount)
 except InsufficientFundsError as e:
@@ -227,6 +245,8 @@ except InsufficientFundsError as e:
 except PaymentError as e:
     logger.error(f"Payment error: {e}")
     return PaymentResult(success=False, reason="payment_error")
+```
+
 
 # Use context managers for resource management
 from contextlib import contextmanager

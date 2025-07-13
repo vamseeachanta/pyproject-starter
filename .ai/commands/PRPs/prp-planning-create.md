@@ -2,6 +2,29 @@
 
 Transform rough ideas into comprehensive PRDs with rich visual documentation.
 
+---
+
+Planning Checklist:
+
+- [ ] Expand concept and define success criteria
+- [ ] Research market, competitors, and technical feasibility
+- [ ] Clarify user requirements and constraints
+- [ ] Generate PRD and visual documentation plan
+
+AI Assistant Prompts:
+
+- Summarize idea and business goals
+- Document research findings and blockers
+- Track status and validation for each planning step
+
+Planning Summary Template:
+
+**Idea:** ...
+**Research Findings:** ...
+**Blockers:** ...
+**Visual Documentation:** ...
+**Validation Steps:** ...
+
 ## Idea: $ARGUMENTS
 
 ## Discovery Process

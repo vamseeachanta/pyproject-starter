@@ -2,6 +2,28 @@
 
 Generate a comprehensive task list for focused changes with validation.
 
+---
+
+Planning Checklist:
+
+- [ ] Define scope and affected files
+- [ ] Research patterns and conventions
+- [ ] Clarify user requirements
+- [ ] Generate task list and validation steps
+
+AI Assistant Prompts:
+
+- Summarize scope and requirements
+- Document research findings and blockers
+- Track status and validation for each task
+
+Task Summary Template:
+
+**Scope:** ...
+**Tasks Created:** ...
+**Blockers:** ...
+**Validation Steps:** ...
+
 ## Task: $ARGUMENTS
 
 ## Analysis Process

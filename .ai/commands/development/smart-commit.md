@@ -39,6 +39,26 @@ For complex changes, include a body explaining what and why
 
 5. After showing me the suggested commit message, ask if I want to:
 
+
+---
+
+AI Assistant Automation Tips:
+
+- Auto-generate commit message based on diff
+- Check for staged files and suggest what to stage
+- Propose splitting large changes into multiple commits
+
+Commit Review Template:
+
+**Commit Type:**
+...
+
+**Message:**
+...
+
+**Files Changed:**
+...
+
 - Use it as-is
 - Modify it
 - Add more details to the body

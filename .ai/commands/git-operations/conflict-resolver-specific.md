@@ -11,6 +11,26 @@ You are an expert at resolving Git merge conflicts. $ARGUMENTS
 
 ## Process:
 
+---
+
+Resolution Checklist:
+- [ ] Check git status
+- [ ] Review PRs/context
+- [ ] Select strategy (safe/aggressive/test/ours/theirs)
+- [ ] Resolve conflicts and document decisions
+- [ ] Run tests if specified
+- [ ] Summarize resolutions
+
+AI Assistant Prompts:
+- Explain each resolution and ask for guidance if complex
+- Flag semantic conflicts for user review
+
+Resolution Summary Template:
+**File:** ...
+**Strategy:** ...
+**Decision:** ...
+**Tests Run:** ...
+
 1. Check git status and identify conflicts
 2. use the github cli to check the PRs and understand the context
 3. Think hard about your findings and plan accordingly

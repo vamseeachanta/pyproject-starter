@@ -2,6 +2,27 @@
 
 Implement a feature using using the PRP file.
 
+---
+
+Execution Checklist:
+- [ ] Load PRP and gather context
+- [ ] Ultrathink and break down tasks
+- [ ] Execute plan step by step
+- [ ] Validate implementation
+- [ ] Complete and report status
+
+AI Assistant Prompts:
+- Summarize PRP requirements before starting
+- Document any deviations from PRP and reasons
+- Report blockers and validation results
+
+Execution Summary Template:
+**Feature:** ...
+**Steps Taken:** ...
+**Issues Found:** ...
+**Validation Results:** ...
+**Completion Status:** ...
+
 ## PRP File: $ARGUMENTS
 
 ## Execution Process

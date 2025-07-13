@@ -7,10 +7,10 @@ ULTRATHINK about the product task and create the plan based on claude.md and cre
 
 ### list of tasks to be completed to fullfill the PRP in the order they should be completed using information dense keywords
 
- - Information dense keyword examples:
- ADD, CREATE, MODIFY, MIRROR, FIND, EXECUTE, KEEP, PRESERVE etc
+- Information dense keyword examples:
+  ADD, CREATE, MODIFY, MIRROR, FIND, EXECUTE, KEEP, PRESERVE etc
 
- Mark done tasks with: STATUS [DONE], if not done leave empty
+- Mark done tasks with: STATUS [DONE], if not done leave empty
 
 ```yaml
 Task 1:
@@ -33,4 +33,31 @@ Task N:
 
 ```
 
-Each tasks hould have unit test coverage, snure tests pass on each task
+Each tasks should have unit test coverage, ensure tests pass on each task
+
+# Task List Initialization
+
+Create a comprehensive task list for building the project based on $ARGUMENTS.
+
+---
+
+Planning Checklist:
+
+- [ ] Ingest information and codebase context
+- [ ] ULTRATHINK about product tasks and create plan
+- [ ] Break down into information-dense tasks
+- [ ] Assign status to each task
+- [ ] Ensure unit test coverage for each task
+
+AI Assistant Prompts:
+
+- Summarize plan and context before starting
+- Track status and report blockers
+- Document completed and remaining tasks
+
+Task Summary Template:
+
+**Tasks Completed:** ...
+**Tasks Remaining:** ...
+**Blockers:** ...
+**Validation Results:** ...
