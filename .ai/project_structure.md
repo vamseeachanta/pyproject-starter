@@ -1,5 +1,13 @@
 # Generic AI Assistant Project Structure
 
+# AI Guidelines
+
+Please follow our [AI Guidelines directory](https://github.com/vamseeachanta/pyproject-starter/tree/master/.ai) 
+for all development work.
+
+## Specific Sections
+- [Python programming](https://github.com/vamseeachanta/pyproject-starter/blob/master/.ai/code-guidance/AI_ASSISTANT-PYTHON-BASIC.md)
+
 ## Directory Structure
 
 Follow strict vertical slice architecture
