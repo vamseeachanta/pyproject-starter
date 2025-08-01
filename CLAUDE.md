@@ -1,0 +1,36 @@
+## Agent OS Documentation
+
+### Product Context
+- **Mission & Vision:** @.agent-os/product/mission.md
+- **Technical Architecture:** @.agent-os/product/tech-stack.md
+- **Development Roadmap:** @.agent-os/specs/2025-07-31-agent-os-integration/spec.md
+- **Decision History:** @.agent-os/specs/2025-07-31-agent-os-integration/sub-specs/technical-spec.md
+
+### Development Standards
+- **Code Style:** @~/.agent-os/standards/code-style.md
+- **Best Practices:** @~/.agent-os/standards/best-practices.md
+
+### Project Management
+- **Active Specs:** @.agent-os/specs/
+- **Spec Planning:** Use `@~/.agent-os/instructions/create-spec.md`
+- **Tasks Execution:** Use `@~/.agent-os/instructions/execute-tasks.md`
+
+## Workflow Instructions
+
+When asked to work on this codebase:
+
+1. **First**, check project priorities and current development focus
+2. **Then**, follow the appropriate instruction file:
+   - For new features: @.agent-os/instructions/create-spec.md
+   - For tasks execution: @.agent-os/instructions/execute-tasks.md
+3. **Always**, adhere to the standards in the files listed above
+
+## Python Package Template Context
+
+This is a modern Python package template with:
+- **Framework:** Hatchling build system with pyproject.toml
+- **Tools:** Black, isort, mypy, pytest, pre-commit, bumpver
+- **Dependencies:** UV for modern dependency management
+- **Standards:** PEP 517/518 compliance, Python 3.8-3.12 support
+
+When working on template features, ensure compatibility with modern Python packaging standards and maintain comprehensive tool integration.

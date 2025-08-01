@@ -127,3 +127,21 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# Agent OS
+.agent-os/cache/
+.agent-os/temp/
+.cross-repo-cache/
+.fallback-cache/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# UV
+.venv/
