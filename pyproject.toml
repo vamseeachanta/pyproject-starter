@@ -1,170 +1,169 @@
-[tool.hatch.build.targets.wheel]
-packages = ["src/pyproject_starter"]
 [build-system]
-requires = ["hatchling>=1.13.0"]
-build-backend = "hatchling.build"
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
 
 [project]
-name = "pyproject_starter"
-version = "0.0.2"
-description = "Python Package Cookiecutter Code"
+name = "pyproject-starter"
+version = "0.1.0"
+description = "Standardized project configuration for pyproject-starter"
 readme = "README.md"
-authors = [{ name = "Vamsee Achanta", email = "vamsee.achanta@aceengineer.com" }]
-license = { file = "LICENSE" }
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Development Team", email = "dev@example.com"}
+]
 classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
-    "Programming Language :: Python",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
 ]
-keywords = ["package", "library", "module", "template", "cookiecutter"]
+
 dependencies = [
-    "pyyaml>=6.0",
-    "tomli>=2.0.0; python_version < '3.11'"
+    "assetutilities"
+    "bs4"
+    "build"
+    "bumpver"
+    "chardet"
+    "crochet"
+    "deepdiff"
+    "excel2img"
+    "excel2img; sys_platform == 'win32'"
+    "fake_headers"
+    "flask"
+    "gitpython==3.1.31"
+    "jinja2"
+    "loguru"
+    "matplotlib"
+    "numpy"
+    "openpyxl"
+    "pandas"
+    "pandoc"
+    "parsel"
+    "plantuml"
+    "playwright"
+    "plotly"
+    "PyPDF2"
+    "pytest"
+    "python-certifi-win32"
+    "python-docx"
+    "pyyaml"
+    "ruamel.yaml"
+    "ruff"
+    "scrapy==2.12"
+    "selenium"
+    "sympy>=1.13.3"
+    "tabula"
+    "twine"
+    "undetected-chromedriver "
+    "utm"
+    "webcolors"
+    "wkhtmltopdf"
+    "xlsxwriter"
 ]
-requires-python = ">=3.8"
 
 [project.optional-dependencies]
-build = [
-    "build>=0.10.0",
-    "twine>=4.0.0",
-]
 dev = [
-    "black>=23.0.0",
-    "bumpver>=2023.1124",
-    "isort>=5.12.0",
-    "pytest>=7.0.0",
-    "mypy>=1.0.0",
-    "pre-commit>=3.0.0",
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "black>=23.0",
+    "flake8>=6.0",
+    "mypy>=1.0",
+    "pre-commit>=3.0",
+]
+test = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "pytest-mock>=3.0",
 ]
 docs = [
-    "sphinx>=5.0.0",
-    "sphinx-rtd-theme>=1.2.0",
+    "sphinx>=6.0",
+    "sphinx-rtd-theme>=1.0",
 ]
-
-[project.scripts]
-pyproject_starter = "pyproject_starter.__main__:main"
 
 [project.urls]
-repository = "https://github.com/vamseeachanta/pyproject_starter"
-documentation = "https://github.com/vamseeachanta/pyproject_starter/blob/main/README.md"
-changelog = "https://github.com/vamseeachanta/pyproject_starter/blob/main/CHANGELOG.md"
-issues = "https://github.com/vamseeachanta/pyproject_starter/issues"
+"Homepage" = "https://github.com/username/pyproject-starter"
+"Bug Tracker" = "https://github.com/username/pyproject-starter/issues"
+"Documentation" = "https://github.com/username/pyproject-starter#readme"
 
-# uv-specific configuration
-[tool.uv]
-dev-dependencies = [
-    "pytest>=7.0.0",
-    "pytest-cov>=4.0.0",
-    "black>=23.0.0",
-    "isort>=5.12.0",
-    "mypy>=1.0.0",
-    "pre-commit>=3.0.0",
-    "bumpver>=2023.1124",
-]
+[tool.setuptools]
+packages = ["src"]
 
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["*"]
+exclude = ["tests*", "docs*"]
 
-[tool.bumpver]
-current_version = "0.0.2"
-version_pattern = "MAJOR.MINOR.PATCH"
-commit_message  = "bump version {old_version} -> {new_version}"
-commit          = true
-tag             = true
-push            = false
-
-    [tool.bumpver.file_patterns]
-    "pyproject.toml" = [
-        'current_version = "{version}"',
-        'version = "{version}"',
-    ]
-    "src/pyproject_starter/__init__.py" = ["{version}"]
-    "src/pyproject_starter/__main__.py" = ["- leveraged-multi-family-analysis v{version}"]
+[tool.black]
+line-length = 88
+target-version = ['py38', 'py39', 'py310', 'py311']
+include = '\.pyi?$'
 
 [tool.isort]
-profile                   = "black"
-import_heading_stdlib     = "Standard library imports"
-import_heading_thirdparty = "Third party imports"
-import_heading_firstparty = "Reader imports"
+profile = "black"
+line_length = 88
 
 [tool.mypy]
 python_version = "3.8"
-strict = true
 warn_return_any = true
 warn_unused_configs = true
-
-    [[tool.mypy.overrides]]
-    module                 = "feedparser"
-    ignore_missing_imports = true
+disallow_untyped_defs = true
 
 [tool.pytest.ini_options]
-minversion = "7.0"
-addopts = [
-    "--strict-markers",
-    "--strict-config",
-    "--verbose",
-    "--tb=short",
-    "--cov-report=term-missing",
-    "--cov-report=html:htmlcov",
-    "--cov-report=xml",
-]
 testpaths = ["tests"]
 python_files = ["test_*.py", "*_test.py"]
-python_classes = ["Test*"]
-python_functions = ["test_*"]
-markers = [
-    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
-    "integration: marks tests as integration tests",
-    "unit: marks tests as unit tests", 
-    "performance: marks tests as performance tests",
-]
-filterwarnings = [
-    "error",
-    "ignore::UserWarning",
-    "ignore::DeprecationWarning",
-]
+addopts = "--cov=src --cov-report=term-missing --cov-report=html"
 
 [tool.coverage.run]
 source = ["src"]
-branch = true
-omit = [
-    "*/tests/*",
-    "*/venv/*",
-    "*/.venv/*",
-    "*/site-packages/*",
-    "*/__pycache__/*",
-]
+omit = ["*/tests/*", "*/test_*.py"]
 
 [tool.coverage.report]
 exclude_lines = [
     "pragma: no cover",
     "def __repr__",
     "if self.debug:",
-    "if settings.DEBUG",
+    "if __name__ == .__main__.:",
     "raise AssertionError",
     "raise NotImplementedError",
-    "if 0:",
-    "if __name__ == .__main__.:",
-    "class .*\\bProtocol\\):",
-    "@(abc\\.)?abstractmethod",
 ]
-ignore_errors = true
-precision = 2
-show_missing = true
 
-[tool.coverage.html]
-directory = "htmlcov"
+[tool.uv]
+# UV environment configuration
+python = "3.11"
+system = false
+seed = true
+compile = true
 
-[tool.coverage.xml]
-output = "coverage.xml"
+[tool.uv.pip]
+index-url = "https://pypi.org/simple"
+extra-index-url = []
+no-cache = false
+pre = false
 
-[tool.ruff]
-line-length = 88
-target-version = "py38"
+# MANDATORY: Parallel Processing Configuration
+[tool.parallel]
+enabled = true
+max_workers = 5
+use_threading = false  # Use multiprocessing for CPU-bound tasks
+use_asyncio = true     # Use asyncio for I/O-bound tasks
+batch_size = 10
 
-[tool.ruff.lint]
-select = ["E", "F", "I", "N", "W", "UP"]
+[tool.parallel.rules]
+# Define when to use parallel processing
+file_operations = "always"      # File reading/writing
+http_requests = "always"        # API calls
+data_processing = "threshold"   # Based on data size
+threshold_size = 1000           # Items before parallel kicks in
 
+[tool.scripts]
+# Common scripts that use parallel processing
+test = "pytest -n auto"
+format = "black . && isort ."
+lint = "flake8 . & mypy . & pylint ."
+install = "uv pip install -e ."
+dev-install = "uv pip install -e .[dev]"
