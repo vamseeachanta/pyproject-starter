@@ -1,0 +1,6 @@
+{
+  "version": "1.0",
+  "repository": "pyproject-starter",
+  "workspace": "workspace-hub",
+  "parentConfig": "../../.drcode/config.json"
+}
