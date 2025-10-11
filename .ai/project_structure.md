@@ -18,27 +18,36 @@ project/
 │   ├── commands/                   # Custom automation commands
 │   │   ├── generate-spec.md        # Specification generation logic
 │   │   └── execute-spec.md         # Specification execution logic
-│   └── settings.json              # AI assistant permissions and preferences
+│   │── settings.json              # AI assistant permissions and preferences
+│   └── AI_GUIDELINES.md            # Global AI assistant rules │
+├── docs/                           # Documentation and reference materials
+│   ├── chat-history/              # AI conversation logs
+│   │   ├── README.md              # Session index
+│   │   └── YYYY-MM-DD_topic.md    # Timestamped sessions
+│   ├── modules/
+│       └── [module-name].md       # Module-specific specifications
+│   └── workflows/                 # Development workflows
+
 │
 ├── specs/                          # Project Specification Documents
 │   ├── templates/                  # Reusable specification templates
 │   │   └── spec_base.md           # Base template structure
 │   └── [feature-name].md          # Generated specifications
+│   └── modules/
+│       └── [module-name].md       # Module-specific specifications
+├── src/
+│   └── assetutilities/              # Main source code
+│   └── base_configs
+│       └── modules/
+│   └── modules/
+│       └── [module-name].md       # Module-specific specifications
 │
-├── examples/                       # Code patterns and references
-│   ├── README.md                  # Example documentation
-│   ├── patterns/                  # Reusable design patterns
-│   └── implementations/           # Reference implementations
+├── tests/                          # Test scripts and modules
+│   ├── __init__.py
+│   └── modules/
+│       └── [module-name].md       # Module-specific specifications
 │
-├── docs/                          # Project documentation
-│   ├── chat-history/              # AI conversation logs
-│   │   ├── README.md              # Session index
-│   │   └── YYYY-MM-DD_topic.md    # Timestamped sessions
-│   └── workflows/                 # Development workflows
-│
-├── AI_GUIDELINES.md               # Global AI assistant rules and best practices
-├── FEATURE_REQUEST.md             # Feature request template
-└── README.md                      # Project overview and setup
+└── .github/                        # GitHub workflows
 ```
 
 ## Key Improvements

@@ -1,5 +1,14 @@
 # AI Model Coding Guidelines
 
+## High Level Process
+
+- Prompt
+- Prepare Spec
+- Prepare PRP
+- AI Implement and test
+- Verify output 
+- Strengthen test
+
 ## Implementation Best Practices
 
 ### 0 — Purpose  
